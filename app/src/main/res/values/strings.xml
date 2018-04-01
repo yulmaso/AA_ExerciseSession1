@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Exercise1</string>
+    <string name="activity_button">ACTIVITY</string>
+    <string name="email_button">EMAIL</string>
+    <string name="text_place">Type your message here</string>
+    <string name="second_activity_default">empty</string>
+
+</resources>
