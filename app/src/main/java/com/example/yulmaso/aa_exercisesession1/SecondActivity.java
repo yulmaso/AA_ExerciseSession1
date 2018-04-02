@@ -8,20 +8,21 @@ import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
-    private static final String text = null;
+    private static final String TEXT_KEY = "TEXT_KEY";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        String output_string = getIntent().getStringExtra(TEXT_KEY);
         TextView textOutput = findViewById(R.id.second_activity_text);
-        textOutput.setText(text);
+        if (output_string != null) textOutput.setText(output_string);
     }
 
-    public static void OpenActivity(Activity activity, String passedText){
+    public static void openActivity(Activity activity, String passedText){
         Intent secondActivityIntent = new Intent(activity, SecondActivity.class);
-        secondActivityIntent.putExtra(text, passedText);
+        secondActivityIntent.putExtra(TEXT_KEY, passedText);
         activity.startActivity(secondActivityIntent);
     }
 }

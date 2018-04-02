@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static String text = null;
+    private static String text = "text";
     private final EditText textInput = findViewById(R.id.text_input);
     private Toast errorToast = Toast.makeText(this, "You haven't entered any text yet", Toast.LENGTH_LONG);
 
@@ -34,6 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void openSecondActivity(){
         text = textInput.getText().toString();
-        SecondActivity.OpenActivity(this, text);
+        SecondActivity.openActivity(this, text);
     }
 }
