@@ -4,5 +4,7 @@
     <string name="email_button">EMAIL</string>
     <string name="text_place">Type your message here</string>
     <string name="second_activity_default">empty</string>
+    <string name="email_subject">Text from my application</string>
+    <string name="email_client_error">No email client were found on the device</string>
 
 </resources>
